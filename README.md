@@ -1,10 +1,12 @@
-# Bash-Script-Worm-Security-Research
-Bash Script Worm (Security Research)
-Author: Efe Cetinkaya
+# Bash Script Worm (Security Research)
+# Author: Efe Cetinkaya
 
-# EN:The purpose of the project was to see how complex a Computer Worm I could write on Linux-based servers using the Bash Script language through an attack scenario. Essentially, my goal was to create a small worm on the server that can replicate itself, occupy memory space by filling it with unnecessary files, target and delete .htaccess files if possible (usually for web applications), and allow the attacker to add and edit the content of target files according to the scenario. If this project is completed, it could be further developed and used for educational purposes and penetration testing in the field of cyber security.
 
-# TR:Projenin amacı, Bash Script dilini kullanarak bir saldırı senaryosu üzerinden Linux tabanlı sunucularda ne kadar komplike bir Computer Worm yazabileceğimi görmekti. Temelde sunucu üzerinde; kendini kopyalayan, bellek alanını gereksiz dosyalarla doldurup işgal eden, mümkünse (genelde web aplikasyonları için) .htaccess dosyalarını hedef alıp silebilen, hedef dosyaların içerğinide senaryoya göre saldırgan tarafından ekleme ve düzenleme yapabilen küçük bir solucan yaratmaktı amacım. Daha da geliştirilebilir bu proje tamamlandığı takdirde siber güvenlik alanında, eğitim amaçlı ve penetrasyon testlerinde kullanılabilir.
+# EN: The purpose of the project was,
+to see how complex a Computer Worm I could write on Linux-based servers using the Bash Script language through an attack scenario. Essentially, my goal was to create a small worm on the server that can replicate itself, occupy memory space by filling it with unnecessary files, target and delete .htaccess files if possible (usually for web applications), and allow the attacker to add and edit the content of target files according to the scenario. If this project is completed, it could be further developed and used for educational purposes and penetration testing in the field of cyber security.
+
+# TR: Projenin amacı,
+Bash Script dilini kullanarak bir saldırı senaryosu üzerinden Linux tabanlı sunucularda ne kadar komplike bir Computer Worm yazabileceğimi görmekti. Temelde sunucu üzerinde; kendini kopyalayan, bellek alanını gereksiz dosyalarla doldurup işgal eden, mümkünse (genelde web aplikasyonları için) .htaccess dosyalarını hedef alıp silebilen, hedef dosyaların içerğinide senaryoya göre saldırgan tarafından ekleme ve düzenleme yapabilen küçük bir solucan yaratmaktı amacım. Daha da geliştirilebilir bu proje tamamlandığı takdirde siber güvenlik alanında, eğitim amaçlı ve penetrasyon testlerinde kullanılabilir.
 
 
 - "find . '(' -type d -name filmler -prune ')' -o '(' -type d -name otherdir -prune ')' -o -name '*baba*.txt' -prune -o -name '*mem*.txt' -prune -o -type f -print" --> "mem" ve "baba" adları ile beraber "filmler" ve "otherdir" dizinlerini de taramaya dahil etmez, yani find komutuyla aynı anda 2 dosya adını ve 2 dizin adını aramadan hariç tuttuk ve bu şekilde 2 veya daha fazla dosya veya dizin adını tek komutda dışlayabilirsin. --> https://stackoverflow.com/questions/64362890/exclude-both-file-and-directory-at-the-same-time-with-find-command
